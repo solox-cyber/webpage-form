@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="login-box">
+      <i class="fa fa-close"></i>
+        <h2>Send Us a Message</h2>
+        <form method="POST" action="mail.php">
+          <div class="user-box">
+            <input type="text" name="fullname" required="">
+            <label>Full Name</label>
+          </div>
+          <div class="user-box">
+            <input type="email" name="email" required="">
+            <label>Your Email</label>
+          </div>
+          <div class="user-box">
+          <select name="select" id="">
+            <option value=""></option>
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+          </select>
+            <label>I want to Post</label>
+          </div>
+          <div class="user-box">
+            <textarea name="msg" id="" cols="30" rows="10" placeholder="Your message goes here..."></textarea>
+            <!-- <label>Your message goes here...</label> -->
+          </div>
+          <div class="use-box">
+          <input type="submit" name="submit" value="Submit form">
+          </div>
+        </form>
+      </div>
+</body>
+</html>
